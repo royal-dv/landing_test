@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <script defer src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+    <script defer src='https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js'
+        crossorigin='anonymous'></script>
+    <script defer src='https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js'
+        crossorigin='anonymous'></script>
+
+    <script defer src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'
+        crossorigin='anonymous'></script>
+    <script defer src='/src/scripts/index.js' crossorigin='anonymous'></script>
+
+    <link rel='icon' type='image/x-icon' href='/src/assets/icons/icon.svg?v=1.1'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet'
+        crossorigin='anonymous'>
+    <link href='/src/styles/index.css?v=1.1' rel='stylesheet' crossorigin='anonymous'>
+    <title>KRAN</title>
+</head>
+
+<body id='home'>
+
+    <header class='sticky-top bg-light b_header border-bottom mb-4 shadow'>
+        <div class='container-sm'>
+            <nav class='d-flex py-3 align-items-center navbar-expand-lg navbar justify-content-between'>
+                <a class='d-flex align-items-center mb-sm-3 col-8 col-md-5 mb-0 mb-md-0 nav-link b_logo navbar-brand'
+                    href='#home'>
+                    <img class='w-25 me-2' src='/src/assets/icons/logo.svg' alt='Logo' />
+                    <span class='text-secondary fs-4'>KRAN</span>
+                </a>
+                <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarMenu'
+                    aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+
+                <div class='collapse navbar-collapse justify-content-end' id='navbarMenu'>
+                    <ul class='navbar-nav'>
+                        <li class='nav-item ms-0 ms-lg-3'>
+                            <a class='nav-link text-secondary fs-4' href='#about'>О компании</a>
+                        </li>
+                        <li class='nav-item ms-0 ms-lg-3'>
+                            <a class='nav-link text-secondary fs-4' href='#contacts'>Контакты</a>
+                        </li>
+                        <li class='nav-item ms-0 ms-lg-3'>
+                            <a class='nav-link text-secondary fs-4' href='#feedback'>Обратная связь</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class='container'>
+            <div id='carousel' class='carousel slide mb-4' data-bs-ride='carousel'>
+                <div class='carousel-indicators'>
+                    <button type='button' data-bs-target='#carousel' data-bs-slide-to='0' class='active'
+                        aria-current='true' aria-label='Slide 1'></button>
+                    <button type='button' data-bs-target='#carousel' data-bs-slide-to='1' aria-label='Slide 2'></button>
+                </div>
+                <div class='carousel-inner w-75 m-auto rounded-2'>
+                    <div class='carousel-item active' data-bs-interval='4000'>
+                        <img src='/src/assets/slider/slider_1.jpg' class='d-block w-100 h-100' alt=''>
+                    </div>
+                    <div class='carousel-item' data-bs-interval='4000'>
+                        <img src='/src/assets/slider/slider_2.jpg' class='d-block w-100 h-100' alt=''>
+                    </div>
+                </div>
+                <button class='carousel-control-prev w-auto' type='button' data-bs-target='#carousel'
+                    data-bs-slide='prev'>
+                    <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                    <span class='visually-hidden'>Previous</span>
+                </button>
+                <button class='carousel-control-next w-auto' type='button' data-bs-target='#carousel'
+                    data-bs-slide='next'>
+                    <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                    <span class='visually-hidden'>Next</span>
+                </button>
+            </div>
+            <div id='about' class='b_about'>
+                <p class='text-secondary fw-bold fs-4 fade'>О компании</p>
+                <p class='font-weight-normal text-secondary b_text__custom fade'>Компания успешно работает c 2000 года и
+                    является одним
+                    из
+                    лидеров в
+                    девелопменте жилой и коммерческой
+                    недвижимости.</p>
+                <p class='font-weight-normal text-secondary b_text__custom fade'>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit.
+                    Integer nunc dui,
+                    finibus
+                    nec
+                    neque eu, mattis scelerisque risus. Quisque varius neque in laoreet luctus. Nullam non rhoncus
+                    diam,
+                    a
+                    iaculis eros. Integer pellentesque augue et velit sollicitudin, vitae pretium libero faucibus.
+                    Aliquam
+                    nec ligula quis purus convallis vestibulum eget nec mi. Ut sagittis ut nunc sed pellentesque.
+                    Mauris
+                    in
+                    nunc volutpat, bibendum justo sed, euismod sapien. Nullam maximus turpis at dolor feugiat
+                    hendrerit.
+                    Cras ante libero, pretium vel sollicitudin aliquet, accumsan et dui. Curabitur in aliquam nisi.
+                    Phasellus ipsum purus, pretium non luctus fermentum, aliquet eget quam. Integer ut odio finibus,
+                    malesuada ante sed, convallis est. Nunc ex massa, porta id tempus in, malesuada vitae arcu.
+                    Praesent
+                    non
+                    porttitor tortor. Mauris vulputate placerat ultrices. Cras ultrices congue nibh ac sollicitudin.
+                    Donec
+                    accumsan, diam vel luctus pulvinar, elit mauris pharetra lacus, ac pulvinar sem ex id massa. Ut
+                    ac
+                    venenatis odio. Donec pharetra dui in gravida tempor. Mauris faucibus et neque a feugiat.
+                    Suspendisse
+                    tincidunt metus vel tellus fermentum luctus. Mauris quis eros ac mi pulvinar auctor. Sed mi
+                    purus,
+                    fermentum sed erat vitae, vestibulum blandit est. In hac habitasse platea dictumst. Sed aliquet
+                    euismod
+                    dui eget pulvinar.</p>
+                <p class='font-weight-normal text-secondary b_text__custom fade'>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit.
+                    Integer nunc dui,
+                    finibus
+                    nec
+                    neque eu, mattis scelerisque risus. Quisque varius neque in laoreet luctus. Nullam non rhoncus
+                    diam,
+                    a
+                    iaculis eros. Integer pellentesque augue et velit sollicitudin, vitae pretium libero faucibus.
+                    Aliquam
+                    nec ligula quis purus convallis vestibulum eget nec mi. Ut sagittis ut nunc sed pellentesque.
+                    Mauris
+                    in
+                    nunc volutpat, bibendum justo sed, euismod sapien. Nullam maximus turpis at dolor feugiat
+                    hendrerit.
+                    Cras ante libero, pretium vel sollicitudin aliquet, accumsan et dui. Curabitur in aliquam nisi.
+                    Phasellus ipsum purus, pretium non luctus fermentum, aliquet eget quam. Integer ut odio finibus,
+                    malesuada ante sed, convallis est. Nunc ex massa, porta id tempus in, malesuada vitae arcu.
+                    Praesent
+                    non
+                    porttitor tortor. Mauris vulputate placerat ultrices. Cras ultrices congue nibh ac sollicitudin.
+                    Donec
+                    accumsan, diam vel luctus pulvinar, elit mauris pharetra lacus, ac pulvinar sem ex id massa. Ut
+                    ac
+                    venenatis odio. Donec pharetra dui in gravida tempor. Mauris faucibus et neque a feugiat.
+                    Suspendisse
+                    tincidunt metus vel tellus fermentum luctus. Mauris quis eros ac mi pulvinar auctor. Sed mi
+                    purus,
+                    fermentum sed erat vitae, vestibulum blandit est. In hac habitasse platea dictumst. Sed aliquet
+                    euismod
+                    dui eget pulvinar.</p>
+            </div>
+            <div id='contacts' class='b_contacts mb-4'>
+                <p class='text-secondary fw-bold fs-4'>Контакты</p>
+                <div class='d-flex justify-content-between flex-md-row flex-column'>
+                    <div class='card p-2 me-2 mb-3 mb-lg-0 fade'>
+                        <img src='/src/assets/icons/smile.svg' class='card-img-top w-50 m-auto' alt=''>
+                        <div class='card-body'>
+                            <h6 class='card-title text-secondary fw-bold fs-4'>Генеральный директор</h6>
+                            <p class='card-text b_text__custom'>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                            <p class='card-text d-flex b_text__custom'>&nbsp;
+                                <a class='nav-link text-secondary' href='tel:+79999999999'> +7&nbsp;(999)&nbsp;999-99-99
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class='card p-2 me-2 mb-3 mb-lg-0 fade'>
+                        <img src='/src/assets/icons/smile.svg' class='card-img-top w-50 m-auto' alt=''>
+                        <div class='card-body'>
+                            <h6 class='card-title text-secondary fw-bold fs-4'>Технический директор</h6>
+                            <p class='card-text b_text__custom'>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                            <p class='card-text d-flex b_text__custom'>&nbsp;
+                                <a class='nav-link text-secondary' href='tel:+79999999999'> +7&nbsp;(999)&nbsp;999-99-99
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class='card p-2 mb-0 mb-3 mb-lg-0 fade'>
+                        <img src='/src/assets/icons/smile.svg' class='card-img-top w-50 m-auto' alt=''>
+                        <div class='card-body'>
+                            <h6 class='card-title text-secondary fw-bold fs-4'>Финансовый директор</h6>
+                            <p class='card-text b_text__custom'>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                            <p class='card-text d-flex b_text__custom'>&nbsp;
+                                <a class='nav-link text-secondary' href='tel:+79999999999'> +7&nbsp;(999)&nbsp;999-99-99
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id='feedback' class='b_feedback fade mb-4'>
+                <p class='text-secondary fw-bold fs-4'>Обратная связь</p>
+                <form class='contact-form w-lg-100 w-50' id='feedback_form'>
+                    <div class='position-relative'>
+                        <label for='name' class='form-label text-secondary b_text__custom'>Имя</label>
+                        <input type='text' name='name'
+                            class='form-control rounded border-2 mb-3 form-input b_text__custom required' id='name'
+                            placeholder='Введите имя' required>
+                    </div>
+                    <div class='position-relative'>
+                        <label for='inputEmail' class='form-label text-secondary b_text__custom'>Email</label>
+                        <input type='email' name='email'
+                            class='form-control rounded border-2 mb-3 form-input b_text__custom required' id='email'
+                            placeholder='Введите email' required>
+                    </div>
+                    <div class='position-relative'>
+                        <label for='message' class='form-label text-secondary b_text__custom'>Сообщение</label>
+                        <textarea name='message' id='message'
+                            class='form-control rounded border-2 mb-4 form-text-area b_text__custom required' rows='5'
+                            cols='30' placeholder='Введите сообщение' required></textarea>
+                    </div>
+
+                    <button type='submit' class='btn btn-dark b_text__custom'>Отправить</button>
+                </form>
+                <div class='b_successSending text-success'>
+                    <div class='alert alert-success w-auto position-fixed bottom-0 end-0 me-3 mb-3 shadow' role='alert'>
+                        Ваше сообщение успешно отправлено
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer class='border-top bg-light'>
+        <div class='container-sm'>
+            <nav class='d-flex py-4 align-items-center flex-md-row flex-column'>
+                <p class='my-0 me-auto mb-2 mb-md-0 text-secondary col-12 col-md-6 fs-4'>© <span
+                        class='b_date fs-4'></span>&nbsp;KRAN,
+                    Inc.
+                    All rights
+                    reserved.
+                </p>
+                <ul
+                    class='list-unstyled d-flex align-items-center justify-content-md-end justify-content-between my-0 ms-auto col-12 col-md-6'>
+                    <li class='ms-md-5 ms-sm-0'>
+                        <a target='_blank' href='https://www.instagram.com'>
+                            <img class='b_social' src='/src/assets/social/facebook.svg'>
+                        </a>
+                    </li>
+                    <li class='ms-md-5 ms-sm-0'>
+                        <a target='_blank' href='https://ru-ru.facebook.com/'>
+                            <img class='b_social' src='/src/assets/social/instagram.svg'>
+                        </a>
+                    </li>
+                    <li class='ms-md-5 ms-sm-0'>
+                        <a target='_blank' href='https://twitter.com/?lang=ru'>
+                            <img class='b_social' src='/src/assets/social/twitter.svg'>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

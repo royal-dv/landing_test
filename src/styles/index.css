@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serf;
+}
+
+a:hover {
+  color: #1a4846 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert();
+}
+
+p {
+  text-align: justify;
+}
+
+.b_about,
+.b_contacts,
+.b_feedback {
+  transition: 0.3s all;
+}
+
+.card {
+  width: 20em;
+}
+
+.card-text {
+  margin-bottom: var(--bs-card-title-spacer-y);
+}
+
+.b_text__custom {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+#email-error,
+#name-error,
+#message-error {
+  position: absolute;
+  top: 77px;
+  left: 0;
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+}
+
+#message-error {
+  top: 181px;
+}
+
+.b_successSending {
+  display: none;
+  cursor: pointer;
+}
+
+footer {
+  box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.b_social {
+  transition: 0.3s all;
+}
+
+.b_social:hover {
+  opacity: 0.7;
+  transition: 0.3s all;
+}
+
+.navbar-toggler:focus {
+  background: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  transition: 0.3s all;
+}
+
+.navbar-toggler:hover {
+  transition: 0.3s all;
+  opacity: 0.7;
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.card:hover {
+  transition: 0.3s all;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100% !important;
+  }
+}
