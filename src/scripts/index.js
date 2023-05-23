@@ -9,14 +9,14 @@ $(function () {
   $('.b_header .nav-link, .b_logo').on('click', function (e) {
     e.preventDefault()
     const $href = $(this).attr('href')
-    $('html, body').animate(
-      {
-        scrollTop: $($href).offset().top - 160,
-      },
-      0
-    )
-
-    if ($(window).width() < 992) {
+    if ($(window).width() > 991) {
+      $('html, body').animate(
+        {
+          scrollTop: $($href).offset().top - 190,
+        },
+        0
+      )
+    } else if ($(window).width() < 992) {
       $navbarMenu.collapse('hide')
       $('html, body').animate(
         {
@@ -24,8 +24,7 @@ $(function () {
         },
         0
       )
-    }
-    if ($(window).width() < 769) {
+    } else if ($(window).width() < 769) {
       $navbarMenu.collapse('hide')
       $('html, body').animate(
         {
@@ -33,8 +32,7 @@ $(function () {
         },
         0
       )
-    }
-    if ($(window).width() < 576) {
+    } else if ($(window).width() < 576) {
       $navbarMenu.collapse('hide')
       $('html, body').animate(
         {
