@@ -9,38 +9,13 @@ $(function () {
   $('.b_header .nav-link, .b_logo').on('click', function (e) {
     e.preventDefault()
     const $href = $(this).attr('href')
-    if ($(window).width() > 991) {
-      $('html, body').animate(
-        {
-          scrollTop: $($href).offset().top - 190,
-        },
-        0
-      )
-    } else if ($(window).width() < 992) {
-      $navbarMenu.collapse('hide')
-      $('html, body').animate(
-        {
-          scrollTop: $($href).offset().top - 260,
-        },
-        0
-      )
-    } else if ($(window).width() < 769) {
-      $navbarMenu.collapse('hide')
-      $('html, body').animate(
-        {
-          scrollTop: $($href).offset().top - 280,
-        },
-        0
-      )
-    } else if ($(window).width() < 576) {
-      $navbarMenu.collapse('hide')
-      $('html, body').animate(
-        {
-          scrollTop: $($href).offset().top - 260,
-        },
-        0
-      )
-    }
+    $navbarMenu.collapse('hide')
+    $('html, body').animate(
+      {
+        scrollTop: $($href).offset().top - $header.height() - 10,
+      },
+      0
+    )
   })
 
   $(window).on('load', function () {
